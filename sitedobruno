@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natureza Viva - Explorando o Mundo Natural</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f0;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #3cb371;
+            padding: 10px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .destaque {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 15px;
+        }
+        
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Natureza Viva</h1>
+        <p>Explorando a beleza e a importância do mundo natural</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ecossistemas">Ecossistemas</a></li>
+            <li><a href="#fauna">Fauna</a></li>
+            <li><a href="#flora">Flora</a></li>
+            <li><a href="#conservacao">Conservação</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="home" class="destaque">
+            <h2>Bem-vindo ao Natureza Viva</h2>
+            <p>Nosso planeta abriga uma incrível diversidade de vida e paisagens deslumbrantes. Este site é dedicado a explorar e celebrar a riqueza da natureza, desde as florestas tropicais até os oceanos profundos, e tudo o que existe entre eles.</p>
+            <p>A natureza não é apenas bela - ela é essencial para nossa sobrevivência. Vamos aprender juntos como proteger e preservar esse tesouro para as gerações futuras.</p>
+        </section>
+        
+        <section id="ecossistemas">
+            <h2>Ecossistemas do Mundo</h2>
+            <p>Descubra os diversos habitats que compõem nosso planeta:</p>
+            
+            <div class="galeria">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?forest" alt="Floresta Tropical">
+                    <div class="card-content">
+                        <h3>Florestas Tropicais</h3>
+                        <p>As florestas tropicais são os ecossistemas mais biodiversos da Terra, abrigando mais da metade das espécies de plantas e animais do planeta.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?desert" alt="Deserto">
+                    <div class="card-content">
+                        <h3>Desertos</h3>
+                        <p>Embora pareçam inóspitos, os desertos abrigam uma variedade de vida adaptada às condições extremas de temperatura e escassez de água.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/600x400/?ocean" alt="Oceanos">
+                    <div class="card-content">
+                        <h3>Oceanos</h3>
+                        <p>Cobrindo mais de 70% da superfície terrestre, os oceanos são essenciais para regular o clima global e abrigam uma incrível diversidade marinha.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="conservacao">
+            <h2>Conservação Ambiental</h2>
+            <p>A proteção da natureza é responsabilidade de todos nós. Conheça algumas iniciativas importantes:</p>
+            <ul>
+                <li>Proteção de espécies ameaçadas</li>
+                <li>Restauração de habitats naturais</li>
+                <li>Combate às mudanças climáticas</li>
+                <li>Redução da poluição</li>
+                <li>Consumo sustentável</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Natureza Viva - Todos os direitos reservados</p>
+        <p>Entre em contato: contato@naturezaviva.com</p>
+    </footer>
+</body>
+</html>
